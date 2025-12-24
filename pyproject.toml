@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "mawaqit-astro"
 version = "1.0.0"
 authors = [
-  { name="Mawaqit Team", email="info@mawaqit.example.com" },
+  { name="Mawaqit Team", email="ghulamhasnain.pro@gmail.com" },
 ]
 description = "A comprehensive Python library for astronomical calculations and prayer times."
 readme = "README.md"
