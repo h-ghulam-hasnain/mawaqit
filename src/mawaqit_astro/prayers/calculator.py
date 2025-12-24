@@ -145,3 +145,4 @@ class PrayerCalculator:
                 "date": f"{date_input.year}-{date_input.month:02d}-{date_input.day:02d}"
             }
         )
+

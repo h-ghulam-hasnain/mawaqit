@@ -40,3 +40,4 @@ def compute_almanac(input_data: InputData) -> AlmanacResult:
         polaris=polaris,
         lunarDistance=lunar_dist
     )
+

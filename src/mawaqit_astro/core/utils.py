@@ -25,3 +25,4 @@ def norm360(x: float) -> float:
 
 def norm24(x: float) -> float:
     return x % 24
+

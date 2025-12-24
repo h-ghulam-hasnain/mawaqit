@@ -69,3 +69,4 @@ def format_time(hours: float) -> str:
     s = total_seconds % 60
 
     return f"{h:02d}:{m:02d}:{s:02d}"
+

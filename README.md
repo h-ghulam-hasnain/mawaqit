@@ -1,9 +1,9 @@
-# Mawaqit
+# Mawaqit-Astro
 
-[![PyPI version](https://img.shields.io/pypi/v/mawaqit.svg)](https://pypi.org/project/mawaqit/)
+[![PyPI version](https://img.shields.io/pypi/v/mawaqit-astro.svg)](https://pypi.org/project/mawaqit-astro/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-**Mawaqit** is a high-precision Python library for astronomical calculations and Islamic prayer times. It is a port of advanced astronomical logic, providing features for sun and moon positioning, sidereal time, and prayer time calculations based on various global standards.
+**Mawaqit-Astro** is a high-precision Python library for astronomical calculations and Islamic prayer times. It is a port of advanced astronomical logic, providing features for sun and moon positioning, sidereal time, and prayer time calculations based on various global standards.
 
 ## Features
 
@@ -16,7 +16,7 @@
 ## Installation
 
 ```bash
-pip install mawaqit
+pip install mawaqit-astro
 ```
 
 ## Quick Start
@@ -24,7 +24,7 @@ pip install mawaqit
 ### 1. Calculate Prayer Times
 
 ```python
-from mawaqit import PrayerCalculator, Location
+from mawaqit_astro import PrayerCalculator, Location
 
 # 1. Provide only required location data
 location = Location(latitude=24.8607, longitude=67.0011, timezone=5.0)
@@ -40,7 +40,7 @@ print(f"Isha: {times.isha}")
 ### 2. High-Level Almanac Calculations
 
 ```python
-from mawaqit.core.almanac import compute_almanac, InputData
+from mawaqit_astro.core.almanac import compute_almanac, InputData
 
 # Advanced astronomical data for a specific moment
 data = InputData(year=2025, month=12, day=24, hour=12, minute=0, second=0)
@@ -53,9 +53,9 @@ print(f"Moon Phase: {almanac.moon.phase}")
 ## Project Structure
 
 ```text
-mawaqit/
+mawaqit-astro/
 ├── src/
-│   └── mawaqit/
+│   └── mawaqit_astro/
 │       ├── core/       # High-precision astronomy logic (Sun, Moon, Nutation, etc.)
 │       ├── prayers/    # Prayer time calculation modules
 │       ├── utils/      # Mathematical and date utilities

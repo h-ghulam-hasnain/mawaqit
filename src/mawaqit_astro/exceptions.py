@@ -13,3 +13,4 @@ class CalculationError(MawaqitError):
 class ValidationError(MawaqitError):
     """Raised for invalid input parameters (months, days, angles)"""
     pass
+

@@ -9,3 +9,4 @@ def calculate_isha(noon: float, delta: float, phi: float, isha_angle: float = 0,
         return maghrib_val + (isha_minutes / 60.0)
 
     return None
+

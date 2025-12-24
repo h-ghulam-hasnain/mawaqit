@@ -134,3 +134,4 @@ class AlmanacResult:
     moonPhase: MoonPhaseResult
     lunarDistance: float
     polaris: Optional[PolarisResult] = None
+

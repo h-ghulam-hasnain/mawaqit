@@ -80,3 +80,4 @@ def compute_polaris(
         greenwichHourAngle=GHApol,
         siderealHourAngle=SHApol
     )
+

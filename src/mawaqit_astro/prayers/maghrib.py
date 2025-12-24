@@ -21,3 +21,4 @@ def calculate_maghrib(noon: float, delta: float, phi: float, sd: float, hp: floa
 
     return maghrib_val
 
+

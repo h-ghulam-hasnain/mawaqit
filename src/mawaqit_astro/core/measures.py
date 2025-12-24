@@ -88,3 +88,4 @@ def compute_time_measures(parsed: dict) -> TimeMeasures:
         julianEphemerisCenturies=TE,
         dayFraction=dayfraction
     )
+

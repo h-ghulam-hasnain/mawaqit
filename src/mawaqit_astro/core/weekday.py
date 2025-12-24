@@ -4,3 +4,4 @@ def get_weekday(jd: float) -> str:
     days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
     idx = int((jd + 1.5) % 7)
     return days[idx]
+

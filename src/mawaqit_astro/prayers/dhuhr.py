@@ -40,3 +40,4 @@ def get_solar_noon(date: InputData, loc: Location) -> tuple[float, float]:
 def calculate_dhuhr(noon: float) -> float:
     # Dhuhr (Noon + slight offset usually 1 min for safety/zawal)
     return noon + (0.01 / 60.0)
+

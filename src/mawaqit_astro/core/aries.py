@@ -20,3 +20,4 @@ def compute_aries(time: TimeMeasures, nutation: NutationResult) -> AriesResult:
         greenwichApparentSiderealTime=gast,
         equationOfEquinoxes=eq_eq
     )
+

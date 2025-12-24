@@ -54,3 +54,4 @@ def calculate_asr(noon: float, delta: float, phi: float, sd: float = 0.0, hp: fl
     ha_asr = get_hour_angle(alt_asr_geom_center, phi, delta)
 
     return noon + (ha_asr / 15.0) if ha_asr else None
+

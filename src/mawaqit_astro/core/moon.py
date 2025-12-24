@@ -51,3 +51,4 @@ def compute_moon_phase(moon_long: float, sun_long: float) -> MoonPhaseResult:
     else: phase = "New Moon"
 
     return MoonPhaseResult(illuminationPercentage=round(illum, 2), phaseQuarter=phase)
+

@@ -2,10 +2,10 @@ import sys
 import os
 from pathlib import Path
 
-# Add the src directory to the path so we can import mawaqit without installing it
+# Add the src directory to the path so we can import mawaqit_astro without installing it
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "src"))
 
-from mawaqit import PrayerCalculator, Location, InputData, Madhab
+from mawaqit_astro import PrayerCalculator, Location, InputData, Madhab
 
 def run_custom_example():
     """
@@ -65,3 +65,4 @@ def run_custom_example():
 
 if __name__ == "__main__":
     run_custom_example()
+

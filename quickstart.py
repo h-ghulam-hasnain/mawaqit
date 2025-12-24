@@ -1,7 +1,7 @@
 import sys
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent / "src"))
-from mawaqit import PrayerCalculator, Location
+from mawaqit_astro import PrayerCalculator, Location
 
 # 1. Setup Location (The only required input)
 location = Location(latitude=24.8607, longitude=67.0011, timezone=5.0)
@@ -18,3 +18,4 @@ print(f"Dhuhr:   {times.dhuhr}")
 print(f"Asr:     {times.asr}")
 print(f"Maghrib: {times.maghrib}")
 print(f"Isha:    {times.isha}")
+

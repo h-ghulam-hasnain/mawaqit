@@ -5,7 +5,7 @@ from pathlib import Path
 # Add the src directory to the path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "src"))
 
-from mawaqit import PrayerCalculator, Location, InputData, Madhab, ALA_HAZRAT
+from mawaqit_astro import PrayerCalculator, Location, InputData, Madhab, ALA_HAZRAT
 
 class TestPrayerCalculator(unittest.TestCase):
     def setUp(self):
@@ -30,7 +30,7 @@ class TestPrayerCalculator(unittest.TestCase):
         self.assertNotEqual(prayers_h.asr, prayers_s.asr)
 
     def test_format_time(self):
-        from mawaqit.prayers.base import format_time
+        from mawaqit_astro.prayers.base import format_time
         self.assertEqual(format_time(12.5), "12:30:00")
         self.assertEqual(format_time(0.0), "00:00:00")
         self.assertEqual(format_time(23.99), "23:59:24")
@@ -48,3 +48,4 @@ class TestPrayerCalculator(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+

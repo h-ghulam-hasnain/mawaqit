@@ -1,7 +1,7 @@
 import sys
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "src"))
-from mawaqit import PrayerCalculator, Location, InputData, LocationError, ValidationError, CalculationError
+from mawaqit_astro import PrayerCalculator, Location, InputData, LocationError, ValidationError, CalculationError
 
 def test_errors():
     calc = PrayerCalculator()
@@ -32,3 +32,4 @@ def test_errors():
 
 if __name__ == "__main__":
     test_errors()
+

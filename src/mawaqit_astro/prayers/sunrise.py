@@ -12,3 +12,4 @@ def calculate_sunrise(noon: float, delta: float, phi: float, sd: float, hp: floa
     ha_sunrise = get_hour_angle(alt, phi, delta)
     return noon - (ha_sunrise / 15.0) if ha_sunrise else None
 
+

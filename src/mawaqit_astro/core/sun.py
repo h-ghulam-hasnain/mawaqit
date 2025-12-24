@@ -59,3 +59,4 @@ def compute_sun(time: TimeMeasures, nutation: NutationResult, gast: float) -> Su
         horizontalParallax=hp,
         semidiameter=sd
     )
+
