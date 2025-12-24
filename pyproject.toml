@@ -3,7 +3,7 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "mawaqit"
+name = "mawaqit-astro"
 version = "1.0.0"
 authors = [
   { name="Mawaqit Team", email="info@mawaqit.example.com" },
@@ -22,8 +22,8 @@ keywords = ["astronomy", "prayer-times", "salat", "islam", "sun", "moon"]
 dependencies = []
 
 [project.urls]
-"Homepage" = "https://github.com/mawaqit/mawaqit"
-"Bug Tracker" = "https://github.com/mawaqit/mawaqit/issues"
+"Homepage" = "https://github.com/h-ghulam-hasnain/mawaqit-astro"
+"Bug Tracker" = "https://github.com/h-ghulam-hasnain/mawaqit-astro/issues"
 
 [tool.setuptools.packages.find]
 where = ["src"]
