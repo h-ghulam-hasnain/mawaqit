@@ -22,8 +22,8 @@ keywords = ["astronomy", "prayer-times", "salat", "islam", "sun", "moon"]
 dependencies = []
 
 [project.urls]
-"Homepage" = "https://github.com/h-ghulam-hasnain/mawaqit-astro"
-"Bug Tracker" = "https://github.com/h-ghulam-hasnain/mawaqit-astro/issues"
+"Homepage" = "https://github.com/h-ghulam-hasnain/mawaqit"
+"Bug Tracker" = "https://github.com/h-ghulam-hasnain/mawaqit/issues"
 
 [tool.setuptools.packages.find]
 where = ["src"]
