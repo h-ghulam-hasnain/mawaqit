@@ -32,6 +32,8 @@ class Location:
     longitude: float
     timezone: float
     elevation: float = 0.0
+    temp_c: float = 15.0
+    pressure_hpa: float = 1013.25
 
     def __post_init__(self):
         from .exceptions import LocationError

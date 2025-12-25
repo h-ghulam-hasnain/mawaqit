@@ -21,7 +21,9 @@ def run_custom_example():
         latitude=51.5074,
         longitude=-0.1278,
         timezone=0.0,
-        elevation=50.0 # Height in meters
+        elevation=50.0, # Height in meters
+        temp_c=10.0,    # Custom temperature (e.g. 10°C)
+        pressure_hpa=1010.0 # Custom pressure (e.g. 1010 hPa)
     )
 
     # 2. Customized Date and DeltaT

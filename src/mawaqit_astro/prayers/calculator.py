@@ -68,13 +68,18 @@ class PrayerCalculator:
                 # Recalculate parameters for the current estimated time
                 n, d, s, h = get_solar_parameters(date_input, loc, current_time)
 
-                # Check if calc_func accepts sd and hp (for sunrise and maghrib)
+                # Check if calc_func accepts sd and hp (for sunrise, asr, maghrib)
                 import inspect
                 sig = inspect.signature(calc_func)
+
+                kwargs = {}
+                if 'temp_c' in sig.parameters: kwargs['temp_c'] = loc.temp_c
+                if 'pressure_hpa' in sig.parameters: kwargs['pressure_hpa'] = loc.pressure_hpa
+
                 if 'sd' in sig.parameters and 'hp' in sig.parameters:
-                    current_time = calc_func(n, d, phi, s, h, *args)
+                    current_time = calc_func(n, d, phi, s, h, *args, **kwargs)
                 else:
-                    current_time = calc_func(n, d, phi, *args)
+                    current_time = calc_func(n, d, phi, *args, **kwargs)
 
                 if current_time is None:
                     break
@@ -84,7 +89,7 @@ class PrayerCalculator:
         fajr_init = calculate_fajr(noon, delta, phi, self.method.fajr_angle)
         sunrise_init = calculate_sunrise(noon, delta, phi, sd, hp, loc.elevation)
         dhuhr_init = calculate_dhuhr(noon)
-        asr_init = calculate_asr(noon, delta, phi, sd, hp, self.madhab)
+        asr_init = calculate_asr(noon, delta, phi, sd, hp, self.madhab, loc.temp_c, loc.pressure_hpa)
         maghrib_init = calculate_maghrib(noon, delta, phi, sd, hp, self.method.maghrib_minutes, loc.elevation)
         isha_init = calculate_isha(
             noon,
